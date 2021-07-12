@@ -1,17 +1,14 @@
-FROM golang:1.14-alpine
-MAINTAINER Atsushi Nagase <a@ngs.io> (https://ngs.io)
+FROM golang:1.16-alpine
+
+LABEL "name"="Automate publishing Go build artifacts for GitHub releases through GitHub Actions"
+LABEL "version"="1.0.3"
+LABEL "repository"="https://github.com/mmalcek/go-release.action"
+LABEL "maintainer"="https://github.com/mmalcek"
 
 LABEL "com.github.actions.name"="Go Release Binary"
 LABEL "com.github.actions.description"="Automate publishing Go build artifacts for GitHub releases"
 LABEL "com.github.actions.icon"="cpu"
 LABEL "com.github.actions.color"="orange"
-
-LABEL "name"="Automate publishing Go build artifacts for GitHub releases through GitHub Actions"
-LABEL "version"="1.0.2"
-LABEL "repository"="http://github.com/ngs/go-release.action"
-LABEL "homepage"="http://ngs.io/t/actions/"
-
-LABEL "maintainer"="Atsushi Nagase <a@ngs.io> (https://ngs.io)"
 
 RUN apk add --no-cache curl jq git build-base bash zip
 
