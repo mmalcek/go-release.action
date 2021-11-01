@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: ngs/go-release.action@v1.0.1
+      uses: mmalcek/go-release.action@v1.0.4
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: "386"
@@ -36,7 +36,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: ngs/go-release.action@v1.0.1
+      uses: mmalcek/go-release.action@v1.0.4
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: amd64
@@ -48,7 +48,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: ngs/go-release.action@v1.0.1
+      uses: mmalcek/go-release.action@v1.0.4
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: "arm"
@@ -60,7 +60,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: ngs/go-release.action@v1.0.1
+      uses: mmalcek/go-release.action@v1.0.4
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: arm64
@@ -72,7 +72,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: ngs/go-release.action@v1.0.1
+      uses: mmalcek/go-release.action@v1.0.4
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: amd64
@@ -84,7 +84,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: ngs/go-release.action@v1.0.1
+      uses: mmalcek/go-release.action@v1.0.4
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: "386"
@@ -96,7 +96,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: ngs/go-release.action@v1.0.1
+      uses: mmalcek/go-release.action@v1.0.4
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: amd64
