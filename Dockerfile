@@ -1,7 +1,7 @@
-FROM golang:1.22-alpine
+FROM golang:1.23-alpine
 
 LABEL "name"="Automate publishing Go build artifacts for GitHub releases through GitHub Actions"
-LABEL "version"="1.0.5"
+LABEL "version"="1.0.6"
 LABEL "repository"="https://github.com/mmalcek/go-release.action"
 LABEL "maintainer"="https://github.com/mmalcek"
 
